@@ -1,0 +1,47 @@
+@import url(App.css);
+
+:root {
+  --COLOR-GRAY: #333333;
+  --COLOR-GRAY-DARK: #222222;
+  --COLOR-GRAY-LIGHT: #cccccc;
+  --COLOR-GRAY-ONGOING: #98c1d9;
+  --COLOR-DONE: #ee6c4d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+header h1 {
+  background: var(--COLOR-GRAY-DARK);
+  color: bisque;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: underline red solid 2px;
+}
+
+header hr {
+  height: 5px;
+  width: 100%;
+  border: none;
+  background-color: bisque;
+  border-radius: px;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  background-color: var(--COLOR-GRAY-DARK);
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+}

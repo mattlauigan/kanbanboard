@@ -1,0 +1,132 @@
+.column {
+  margin: 20px;
+  background: var(--COLOR-GRAY-DARK);
+  color: bisque;
+  width: 100%;
+  max-width: 20rem;
+  height: fit-content;
+  /* display: inline-block; */
+  padding: 0.5rem;
+  border-radius: 10px;
+  /* border: dashed transparent 1px; */
+}
+
+.column.drop {
+  box-shadow: 0px 10px 10px bisque;
+}
+
+.column > * {
+  margin: 0;
+}
+
+.Modal {
+  position: absolute;
+  background: rgba(22, 5, 40, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 0.25rem;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+
+.modalContent {
+  background: var(--COLOR-GRAY-LIGHT);
+  position: absolute;
+  z-index: 1;
+  padding: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent > div {
+  align-items: center;
+  margin: auto;
+  padding: auto;
+}
+
+.modalReminder {
+  position: absolute;
+  color: red;
+  top: 80%;
+  left: 67%;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+.Modal input[type="text"] {
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  margin: 0 0 0.5rem 0;
+}
+
+.Modal textarea {
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: none;
+  background-color: #fff;
+  outline: none;
+  margin: 0 0 0.5rem 0;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Modal button {
+  background-color: var(--COLOR-GRAY-ONGOING);
+  text-decoration: none;
+  border: 0;
+  height: 40px;
+  width: auto;
+  margin: auto;
+  border-radius: 4px;
+  position: relative;
+}
+
+.Modal button:hover {
+  background-color: rgb(172, 176, 179);
+  text-decoration: none;
+  border: 0;
+  height: 40px;
+  width: auto;
+  padding: 0.5rem;
+  margin: 0 0 0 0.25rem;
+  border-radius: 4px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.titleWrapper button {
+  all: unset;
+  color: black;
+  background: #fff;
+  padding: 0.25rem;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.titleWrapper button:hover {
+  all: unset;
+  color: black;
+  background: var(--COLOR-GRAY-LIGHT);
+  padding: 0.5rem;
+  border-radius: 4px;
+  height: fit-content;
+}
